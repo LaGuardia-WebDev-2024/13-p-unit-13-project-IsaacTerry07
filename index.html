@@ -21,39 +21,55 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+   <link rel= "preconnect" href"https://fonts.googleapis.com/css?family=Trirong" >
+ <style>
+body {
+  font-family: "Trirong", serif;
+}
+</style>
+</head>
+    
     <h1>Quiz About [Me]</h1>
+  <img src= "https://cdn.glitch.global/0fc2ad15-c215-4cb2-b7d8-c28ddde57c72/IMG_1058.jpeg?v=1749866793449" >
+    <img src= "https://cdn.glitch.global/0fc2ad15-c215-4cb2-b7d8-c28ddde57c72/IMG_1059.jpeg?v=1749868275366">
+   <img src= "https://cdn.glitch.global/0fc2ad15-c215-4cb2-b7d8-c28ddde57c72/IMG_1060.jpeg?v=1749869710373">
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🎥 What is my favorite Nicki Song (Right Now)?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">Four Door Avantador</option>
+          <option value="movie2">The Night Is Still Young </option>
+          <option value="movie3">Your Love </option>
+          <option value="movie4">Did It on Em</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check Song Answer</button>
     </form>
     <div id="movie-result"></div>
+    
+    
+    
+    
     <hr />
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        📖 What is my favorite Nicki Album?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">Pink Friday: Roman Reloaded</option>
+          <option value="book2">Pink Friday </option>
+          <option value="book3">Pink Friday 2</option>
+          <option value="book4">Pinkprint </option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Album Answer</button>
     </form>
     <div id="book-result"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      
       //Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
